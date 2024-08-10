@@ -1,4 +1,4 @@
 
-const VideoAiChatbot = require('./components/VideoAiChatbot');
+import VideoAiChatbot from './components/VideoAiChatbot';
 
-module.exports = { VideoAiChatbot };
+export default VideoAiChatbot;

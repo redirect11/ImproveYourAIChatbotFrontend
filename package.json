@@ -1,7 +1,8 @@
 {
   "name": "react-src",
   "version": "1.0.0",
-  "main": "main.lib.bundle.js",
+  "main": "dist/main.lib.bundle.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "redux-devtools": "redux-devtools --open=electron --hostname=localhost --port=8000"
@@ -43,6 +44,7 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.24.1",
+    "@babel/runtime-corejs3": "^7.25.0",
     "@eslint/compat": "^1.0.3",
     "@eslint/js": "^9.4.0",
     "@svgr/webpack": "^8.1.0",
