@@ -144,10 +144,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_VideoAiChatbot__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/VideoAiChatbot */ \"./src/components/VideoAiChatbot.js\");\n// import React from 'react';\n// import { createRoot } from 'react-dom/client';\n// import VideoAiChatbot from './components/VideoAiChatbot';\n// import { StrictMode } from 'react';\n// import './main.css';\n\n// const root = createRoot(document.getElementById('openai-chatbot'));\n// root.render(<StrictMode>\n//   <VideoAiChatbot />\n// </StrictMode>);\n\n\n\n//# sourceURL=webpack://VideoAiChatbot/./src/index.js?");
+eval("var VideoAiChatbot = __webpack_require__(/*! ./components/VideoAiChatbot */ \"./src/components/VideoAiChatbot.js\");\nmodule.exports = {\n  VideoAiChatbot: VideoAiChatbot\n};\n\n//# sourceURL=webpack://VideoAiChatbot/./src/index.js?");
 
 /***/ }),
 
@@ -2015,7 +2014,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ 	return __webpack_exports__;
