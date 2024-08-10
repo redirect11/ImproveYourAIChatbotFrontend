@@ -26,7 +26,6 @@ const VideoAiChatbot = () => {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const assistants = window.ChatbotData.assistants.data ? window.ChatbotData.assistants.data : [];
   const [selectedAssistant, setSelectedAssistant] = useState(assistants && assistants.length === 1 ? assistants[0] : null);
-
   let oldMessages = window.ChatbotData.messages.data.data ? window.ChatbotData.messages.data.data : [];
   
   let wMessage = window.ChatbotData.welcomeMessage ? window.ChatbotData.welcomeMessage : "";
@@ -48,12 +47,10 @@ const VideoAiChatbot = () => {
   let chatbotName = window.ChatbotData.chatbotName ? window.ChatbotData.chatbotName : "Chatbot";
   let chatBotMessage;
 
-  console.log('messages:', messages);
   if(assistants.length === 0) {
     chatBotMessage = useMemo(() => createChatBotMessage("No assistants available"), []);
   } else if(assistants.length === 1) {
     chatBotMessage = useMemo(() => createChatBotMessage(wMessage), []);
-    console.log('assistants:', assistants);	
   } else {	
     chatBotMessage = useMemo(() => createChatBotMessage(wMessage,
     {
