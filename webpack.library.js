@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist/'),
     filename: '[name].lib.bundle.js',
     globalObject: 'this',
+    libraryTarget: "umd",
     library: {
       name: 'VideoAiChatbot',
       type: 'umd',
