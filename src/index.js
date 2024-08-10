@@ -1,6 +1,6 @@
 
-import VideoAiChatbot, { ChatbotStyleWrapper } from './components/VideoAiChatbot';
-import Chatbot, { createChatBotMessage, createClientMessage, createCustomMessage } from 'react-chatbot-kit';
+import { ChatbotStyleWrapper } from './components/VideoAiChatbot';
+import { createChatBotMessage, createClientMessage, createCustomMessage } from 'react-chatbot-kit';
 import MessageParser from './messageParser';
 import ActionProvider from './actionProvider';
 import SVG from 'react-inlinesvg'; 
@@ -22,7 +22,6 @@ export { MessageParser,
         Overview, 
         SVG,
         ChatbotStyleWrapper,
-        Chatbot,
         createChatBotMessage,
         createClientMessage,
         createCustomMessage
