@@ -1,12 +1,18 @@
 const path = require('path');
+const { library } = require('webpack');
 
 module.exports = {
   entry: {
-    main: './src/main.js', // Entry point per il Chatbot
+    main: './src/index.js', // Entry point per il Chatbot
   },
   output: {
-    path: path.resolve(__dirname, '../assets/js'),
-    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './dist/'),
+    filename: '[name].lib.bundle.js',
+    globalObject: 'this',
+    library: {
+      name: 'VideoAiChatbot',
+      type: 'umd',
+    },
   },
   module: {
     rules: [  
