@@ -2,7 +2,7 @@
   "name": "react-src",
   "version": "1.0.0",
   "main": "dist/main.lib.bundle.js",
-  "module": "index.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "redux-devtools": "redux-devtools --open=electron --hostname=localhost --port=8000"

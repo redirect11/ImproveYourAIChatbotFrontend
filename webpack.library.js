@@ -9,11 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, './dist/'),
     filename: '[name].lib.bundle.js',
     globalObject: 'this',
-    libraryTarget: "umd",
-    library: {
-      name: 'VideoAiChatbot',
-      type: 'umd',
-    },
+    libraryTarget: 'umd',
+    library: 'VideoAiChatbot',
   },
   module: {
     rules: [  
@@ -61,6 +58,10 @@ module.exports = {
       }
   
       ]
+  },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.css'],
