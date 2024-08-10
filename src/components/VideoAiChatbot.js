@@ -150,4 +150,8 @@ const VideoAiChatbot = () => {
   );
 }
 
+export {
+  ChatbotStyleWrapper
+}
+
 export default VideoAiChatbot;
