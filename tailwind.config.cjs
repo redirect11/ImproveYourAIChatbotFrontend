@@ -5,7 +5,6 @@ const plugin = require('tailwindcss/plugin')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     mode: 'jit',
-    purge: ['./src/**/*.{js,jsx}', flowbite.content()],
     content: ['./src/**/*.{js,jsx}',  flowbite.content()],
     theme: {
         fontSize: {
