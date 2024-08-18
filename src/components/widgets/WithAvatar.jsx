@@ -3,6 +3,8 @@ import React from 'react';
 import SVG from 'react-inlinesvg'; 
 
 const WithAvatar = ( {state, message} ) => {
+  console.log('WithAvatar:', message);
+  console.log('WithAvatar:', state);
   return (
     <div className="react-chatbot-kit-chat-bot-custom-message-container">
       <div className="react-chatbot-kit-chat-bot-avatar-container">

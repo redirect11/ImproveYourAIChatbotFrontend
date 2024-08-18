@@ -1,8 +1,7 @@
 import React, { useMemo } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-const ChatbotHeader = ( { selectedAssistant } ) => {
-
+const ChatbotHeader = ( {selectedAssistant} ) => {
   const headerColor = useMemo(() => {
    let headerColorFrom = "from-[#e0aa6c]";
    let headerColorTo = " to-[#423827]";

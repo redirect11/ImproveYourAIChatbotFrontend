@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    assistants: window.adminData && window.adminData.assistants ? window.adminData.assistants.data.data : [],
+    assistants: window.ChatbotData && window.ChatbotData.assistants ? window.ChatbotData.assistants : [],
     selectedAssistant: null
 };
 

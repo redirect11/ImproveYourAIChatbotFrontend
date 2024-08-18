@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    transcriptions: window.adminData.transcriptions ? window.adminData.transcriptions : [],
+    transcriptions: window?.ChatbotData?.transcriptions ? window.ChatbotData.transcriptions : [],
     selectedTranscription: null
 };
 

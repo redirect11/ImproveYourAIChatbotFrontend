@@ -5,8 +5,6 @@ import Loader from '../Loader';
 
 
 const LoaderMessage = ( {state, message} ) => {
-  console.log('state:', state);
-  console.log('message:', message);
   return (
     <div className="react-chatbot-kit-chat-bot-custom-message-container">
       <div className="react-chatbot-kit-chat-bot-avatar-container">

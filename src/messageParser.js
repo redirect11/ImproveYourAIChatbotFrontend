@@ -2,7 +2,7 @@ import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
-    console.log(message);
+    console.log('MessageParser', message);
       actions.handleUserMessage(message);
   };
 
