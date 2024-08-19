@@ -30,9 +30,9 @@ const VideoAiChatbot = () => {
   const assistantToSelect = lastAssistant ? lastAssistant : (assistants && assistants.length === 1 ? assistants[0] : null);
   const [selectedAssistant, setSelectedAssistant] = useState(assistantToSelect);
 
-  console.log( 'chatbotdata', window.ChatbotData);
+  console.log( 'chatbotdata AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', window.ChatbotData);
 
-  let oldMessages = window.ChatbotData.messages.data.messages.data ? window.ChatbotData.messages.data.messages.data : [];
+  let oldMessages = window.ChatbotData.messages.data?.messages?.data ? window.ChatbotData.messages.data.messages.data : [];
   let isHandover =  useSelector(state => state.rootReducer.handover.handover);
 
 
